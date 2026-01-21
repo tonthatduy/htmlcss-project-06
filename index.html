@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -14,6 +14,11 @@
         <link
             href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
             rel="stylesheet"
+        />
+        <!-- Link Swiper's CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
         />
 
         <!-- Responsive -->
@@ -59,7 +64,7 @@
                         <img src="./asset/img/hero-01.png" alt="" />
                     </div>
                     <div class="hero__content">
-                        <div class="stack stack-20">
+                        <div class="d-flex stack-20">
                             <h1>An Interactive Designer</h1>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur
@@ -185,9 +190,9 @@
 
             <!-- Services -->
             <section class="section services">
-                <div class="container stack stack-60">
+                <div class="container d-flex stack-60">
                     <!-- Heading -->
-                    <div class="services-heading stack stack-20">
+                    <div class="services-heading d-flex stack-20">
                         <h2>Specialities</h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -198,7 +203,7 @@
                     <!-- List -->
                     <div class="services-list">
                         <!-- Item 1 -->
-                        <article class="services-item stack stack-15">
+                        <article class="services-item d-flex stack-15">
                             <div class="services-icon">
                                 <img
                                     src="./asset/icon/services-icon-01.png"
@@ -215,7 +220,7 @@
                         </article>
 
                         <!-- Item 2 -->
-                        <article class="services-item stack stack-15">
+                        <article class="services-item d-flex stack-15">
                             <div class="services-icon">
                                 <img
                                     src="./asset/icon/services-icon-02.png"
@@ -232,7 +237,7 @@
                         </article>
 
                         <!-- Item 3 -->
-                        <article class="services-item stack stack-15">
+                        <article class="services-item d-flex stack-15">
                             <div class="services-icon">
                                 <img
                                     src="./asset/icon/services-icon-03.png"
@@ -253,7 +258,7 @@
 
             <!-- Project -->
             <section class="section section__project">
-                <div class="container stack stack-70">
+                <div class="container d-flex stack-70">
                     <div class="row">
                         <h2>Take a look at my recent projects</h2>
                         <p>
@@ -265,7 +270,7 @@
                     <div class="section__project-wrapper">
                         <!-- Item 1 -->
                         <div class="project-item">
-                            <div class="project-item-content stack stack-10">
+                            <div class="project-item-content d-flex stack-10">
                                 <h3 class="h4">Wally Website</h3>
                                 <p>
                                     Lorem ipsum dolor amet, consectetur
@@ -280,7 +285,7 @@
 
                         <!-- Item 2 -->
                         <div class="project-item">
-                            <div class="project-item-content stack stack-10">
+                            <div class="project-item-content d-flex stack-10">
                                 <h3 class="h4">Banking App</h3>
                                 <p>
                                     Lorem ipsum dolor amet, consectetur
@@ -295,7 +300,7 @@
 
                         <!-- Item 3 -->
                         <div class="project-item">
-                            <div class="project-item-content stack stack-10">
+                            <div class="project-item-content d-flex stack-10">
                                 <h3 class="h4">Web App</h3>
                                 <p>
                                     Lorem ipsum dolor amet, consectetur
@@ -310,7 +315,7 @@
 
                         <!-- Item 4 -->
                         <div class="project-item">
-                            <div class="project-item-content stack stack-10">
+                            <div class="project-item-content d-flex stack-10">
                                 <h3 class="h4">Oculus Website</h3>
                                 <p>
                                     Lorem ipsum dolor amet, consectetur
@@ -331,13 +336,13 @@
 
             <!-- Designer -->
             <section class="section designer">
-                <div class="container stack stack-70">
-                    <div class="designer__heading stack stack-10">
+                <div class="container d-flex stack-70">
+                    <div class="designer__heading d-flex stack-10">
                         <div class="designer__heading-subtitle">
                             <span class="h4"> Hey,,,,It’s Arif</span>
                             <img src="./asset/icon/designer-01.svg" alt="" />
                         </div>
-                        <div class="stack stack-15">
+                        <div class="d-flex stack-15">
                             <h2>Interactive Designer</h2>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur
@@ -397,8 +402,301 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Comment -->
+            <section class="section comment">
+                <div class="container d-flex stack-60">
+                    <div class="comment__heading d-flex stack-20">
+                        <h2>What people says</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. In urna, non nisl tincidunt ut elementum
+                            turpis.
+                        </p>
+                    </div>
+
+                    <div class="swiper comment-swiper">
+                        <div class="swiper-wrapper">
+                            <!-- Comment 1 -->
+                            <div
+                                class="swiper-slide comment__item d-flex stack-20"
+                            >
+                                <div>
+                                    <p class="comment__text">
+                                        “Duis aute irure dolor in reprehenderit
+                                        in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint
+                                        occaecat cupidatat non proident, sunt in
+                                        culpa.”
+                                    </p>
+                                </div>
+
+                                <div class="comment__author">
+                                    <div class="comment__author-wrap">
+                                        <div class="comment__author-img">
+                                            <img
+                                                src="./asset/img/comment-01.png"
+                                                alt=""
+                                            />
+                                        </div>
+
+                                        <h5>Joe Elia</h5>
+                                    </div>
+                                    <span
+                                        >User Interface Design at PCL Lab</span
+                                    >
+                                </div>
+                            </div>
+
+                            <!-- Comment 2 -->
+                            <div
+                                class="swiper-slide comment__item d-flex stack-20"
+                            >
+                                <div class="commnet__chat-box">
+                                    <p class="comment__text">
+                                        “Duis aute irure dolor in reprehenderit
+                                        in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint
+                                        occaecat cupidatat non proident, sunt in
+                                        culpa.”
+                                    </p>
+                                </div>
+
+                                <div class="comment__author">
+                                    <div class="comment__author-wrap">
+                                        <div class="comment__author-img">
+                                            <img
+                                                src="./asset/img/comment-01.png"
+                                                alt=""
+                                            />
+                                        </div>
+
+                                        <h5>Joe Elia</h5>
+                                    </div>
+                                    <span
+                                        >User Interface Design at PCL Lab</span
+                                    >
+                                </div>
+                            </div>
+
+                            <!-- Comment 3 -->
+                            <div
+                                class="swiper-slide comment__item d-flex stack-20"
+                            >
+                                <div class="commnet__chat-box">
+                                    <p class="comment__text">
+                                        “Duis aute irure dolor in reprehenderit
+                                        in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint
+                                        occaecat cupidatat non proident, sunt in
+                                        culpa.”
+                                    </p>
+                                </div>
+
+                                <div class="comment__author">
+                                    <div class="comment__author-wrap">
+                                        <div class="comment__author-img">
+                                            <img
+                                                src="./asset/img/comment-01.png"
+                                                alt=""
+                                            />
+                                        </div>
+
+                                        <h5>Joe Elia</h5>
+                                    </div>
+                                    <span
+                                        >User Interface Design at PCL Lab</span
+                                    >
+                                </div>
+                            </div>
+
+                            <!-- Comment 4 -->
+                            <div
+                                class="swiper-slide comment__item d-flex stack-20"
+                            >
+                                <div class="commnet__chat-box">
+                                    <p class="comment__text">
+                                        “Duis aute irure dolor in reprehenderit
+                                        in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint
+                                        occaecat cupidatat non proident, sunt in
+                                        culpa.”
+                                    </p>
+                                </div>
+
+                                <div class="comment__author">
+                                    <div class="comment__author-wrap">
+                                        <div class="comment__author-img">
+                                            <img
+                                                src="./asset/img/comment-01.png"
+                                                alt=""
+                                            />
+                                        </div>
+
+                                        <h5>Joe Elia</h5>
+                                    </div>
+                                    <span
+                                        >User Interface Design at PCL Lab</span
+                                    >
+                                </div>
+                            </div>
+
+                            <!-- Comment 5 -->
+                            <div
+                                class="swiper-slide comment__item d-flex stack-20"
+                            >
+                                <div class="commnet__chat-box">
+                                    <p class="comment__text">
+                                        “Duis aute irure dolor in reprehenderit
+                                        in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint
+                                        occaecat cupidatat non proident, sunt in
+                                        culpa.”
+                                    </p>
+                                </div>
+
+                                <div class="comment__author">
+                                    <div class="comment__author-wrap">
+                                        <div class="comment__author-img">
+                                            <img
+                                                src="./asset/img/comment-01.png"
+                                                alt=""
+                                            />
+                                        </div>
+
+                                        <h5>Joe Elia</h5>
+                                    </div>
+                                    <span
+                                        >User Interface Design at PCL Lab</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="comment__decor">
+                    <img src="./asset/icon/decor-small.svg" alt="" />
+                    <img src="./asset/icon/decor-small.svg" alt="" />
+                </div>
+            </section>
+
+            <!-- FAQ -->
+            <section class="section faq">
+                <div class="container d-flex stack-60">
+                    <h2>A few questions clients normally ask me</h2>
+
+                    <!-- Item 1 -->
+                    <div class="faq-item">
+                        <div class="faq-item__heading d-flex stack-20">
+                            <h3 class="h4">What is your hourly rate?</h3>
+                            <p class="faq-content">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In urna, non nisl tincidunt ut
+                                elementum turpis.
+                            </p>
+                        </div>
+                        <button class="faq-btn">
+                            <span class="faq-icon">+</span>
+                        </button>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="faq-item">
+                        <div class="faq-item__heading d-flex stack-20">
+                            <h3 class="h4">
+                                What type of projects do you take on?
+                            </h3>
+                            <p class="faq-content">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In urna, non nisl tincidunt ut
+                                elementum turpis.Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit.
+                            </p>
+                        </div>
+                        <button class="faq-btn">
+                            <span class="faq-icon">+</span>
+                        </button>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="faq-item">
+                        <div class="faq-item__heading d-flex stack-20">
+                            <h3 class="h4">How do you charge for projects ?</h3>
+                            <p class="faq-content">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In urna, non nisl tincidunt ut
+                                elementum turpis.
+                            </p>
+                        </div>
+                        <button class="faq-btn">
+                            <span class="faq-icon">+</span>
+                        </button>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="faq-item">
+                        <div class="faq-item__heading d-flex stack-20">
+                            <h3 class="h4">What time-zone do you work in?</h3>
+                            <p class="faq-content">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In urna, non nisl tincidunt ut
+                                elementum turpis. Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. In urna, non nisl
+                                tincidunt ut elementum turpis.
+                            </p>
+                        </div>
+                        <button class="faq-btn">
+                            <span class="faq-icon">+</span>
+                        </button>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="faq-item">
+                        <div class="faq-item__heading d-flex stack-20">
+                            <h3 class="h4">How often can we communicate?</h3>
+                            <p class="faq-content">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In urna, non nisl tincidunt ut
+                                elementum turpis.Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. In urna, non nisl
+                                tincidunt ut elementum turpis. Lorem ipsum dolor
+                                sit amet, consectetur adipiscing elit. In urna,
+                                non nisl tincidunt ut elementum turpis.
+                            </p>
+                        </div>
+                        <button class="faq-btn">
+                            <span class="faq-icon">+</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gallery -->
+            <section class="section gallery">
+                <div class="container d-flex stack-70">
+                    <div class="d-flex stack-30">
+                        <div class="gallery-heading d-flex stack-20">
+                            <h2>My atmosphere</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In urna, non nisl tincidunt ut
+                                elementum turpis.
+                            </p>
+                        </div>
+                        <a href="mailto:@interaction_arif">@interaction_arif</a>
+                    </div>
+
+                    <div>
+                        
+                    </div>
+                </div>
+            </section>
         </main>
     </body>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <script>
         const video = document.querySelector(".design-media__video");
@@ -433,6 +731,54 @@
 
         video.addEventListener("ended", () => {
             showControls();
+        });
+    </script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        window.addEventListener("load", () => {
+            new Swiper(".comment-swiper", {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                loop: true,
+                speed: 1000,
+
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+            });
+        });
+    </script>
+
+    <!-- FAQ -->
+    <script>
+        const fqaItems = document.querySelectorAll(".faq-item");
+
+        fqaItems.forEach((item) => {
+            const btn = item.querySelector(".faq-btn");
+            const icon = item.querySelector(".faq-icon");
+            const content = item.querySelector(".faq-content");
+
+            btn.addEventListener("click", () => {
+                const isOpen = item.classList.contains("active");
+
+                fqaItems.forEach((i) => {
+                    i.classList.remove("active");
+                    i.querySelector(".faq-content").style.maxHeight = null;
+                    i.querySelector(".faq-icon").textContent = "+";
+                });
+
+                if (!isOpen) {
+                    item.classList.add("active");
+                    icon.textContent = "-";
+                }
+            });
         });
     </script>
 </html>
