@@ -393,15 +393,20 @@ h5,
     gap: 35px 60px;
 }
 
+.client__list a:hover img {
+    transform: scale(1.05);
+}
+
 .client__list a {
     display: flex;
     align-items: center;
-    justify-content: sta;
+    justify-content: start;
 }
 
 .client__list a img {
     width: max-content;
     max-height: 36px;
+    transition: transform 0.2s ease;
 }
 
 /* Services */
@@ -825,6 +830,7 @@ h5,
     border: 2px solid #161a1c33;
     border-radius: 50%;
     background: var(--light-clr);
+    cursor: pointer;
     transition:
         border-color 0.3s ease,
         background-color 0.3s ease,
@@ -895,7 +901,9 @@ h5,
     width: 100%;
     height: auto;
     object-fit: cover;
-    transition: transform 0.2s ease;
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
 }
 
 .gallery-list {
@@ -905,7 +913,8 @@ h5,
 }
 
 .gallery-item:hover .gallery-image img {
-    transform: scale(1.05);
+    transform: translateY(-4px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
 }
 
 /* CTA */
@@ -1043,4 +1052,62 @@ h5,
         transform: scale(1);
         box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
     }
+}
+
+/* ***************RESPONSIVE******************* */
+/* Laptop */
+@media screen and (min-width: 992px) {
+    .toggle-menu {
+        display: none;
+    }
+
+    .mobile-header {
+        display: none;
+    }
+}
+
+/* Tablet and Mobile */
+@media screen and (max-width: 991.98px) {
+    .toggle-menu {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        padding: 13px 9px;
+        margin-left: auto;
+        border: 1px solid #5d3bee33;
+        border-radius: 50%;
+        background: var(--background-clr);
+    }
+
+    .header-mail > span:first-child {
+        width: 32px;
+        height: 32px;
+    }
+
+    .header-mail > span:last-child {
+        display: none;
+    }
+
+    .header-logo {
+        width: 37px;
+        height: 44px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .header-inner {
+        flex-direction: row-reverse;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* Mobile */
+@media screen and (max-width: 767.98px) {
 }
