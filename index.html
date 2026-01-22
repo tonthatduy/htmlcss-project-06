@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="./asset/css/style.css" />
     </head>
     <body>
+        <!-- Header -->
         <header class="section header">
             <div class="container header-inner">
                 <a href="mailto:hi@arif.interactive" class="header-mail">
@@ -39,6 +40,32 @@
                     </span>
                     <span>hi@arif.interactive</span>
                 </a>
+
+                <!-- Tablet / Mobile Menu -->
+                <button>
+                    <svg
+                        width="17"
+                        height="8"
+                        viewBox="0 0 17 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M1 7H16"
+                            stroke="#5D3BEE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            d="M1 1H16"
+                            stroke="#5D3BEE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                </button>
 
                 <a href="/" class="header-logo">
                     <img src="./asset/img/logo.png" alt="Logo" />
@@ -675,8 +702,8 @@
             <!-- Gallery -->
             <section class="section gallery">
                 <div class="container d-flex stack-70">
-                    <div class="d-flex stack-30">
-                        <div class="gallery-heading d-flex stack-20">
+                    <div class="gallery-heading d-flex stack-30">
+                        <div class="d-flex stack-20">
                             <h2>My atmosphere</h2>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur
@@ -687,8 +714,103 @@
                         <a href="mailto:@interaction_arif">@interaction_arif</a>
                     </div>
 
-                    <div>
-                        
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper gallery-list">
+                            <!-- Item 1 -->
+                            <div class="swiper-slide gallery-item">
+                                <div class="gallery-image">
+                                    <img
+                                        src="./asset/img/gallery-01.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+
+                            <!-- Item 2 -->
+                            <div class="swiper-slide gallery-item">
+                                <div class="gallery-image">
+                                    <img
+                                        src="./asset/img/gallery-02.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+
+                            <!-- Item 3 -->
+                            <div class="swiper-slide gallery-item">
+                                <div class="gallery-image">
+                                    <img
+                                        src="./asset/img/gallery-03.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA -->
+            <section class="section cta">
+                <div class="container d-flex stack-30">
+                    <div class="cta-image">
+                        <img src="./asset/img/cta-01.svg" alt="" />
+                    </div>
+                    <div class="cta-heading d-flex stack-20">
+                        <h2>Got a project? Let’s talk</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. In urna, non nisl tincidunt ut elementum
+                            turpis.
+                        </p>
+                        <a href="#" class="btn is-pulse btn-cta">
+                            Book a call
+                        </a>
+                    </div>
+                    <div class="cta-decor">
+                        <img src="./asset/icon/decor-03.png" alt="" />
+                        <img src="./asset/icon/decor-small.svg" alt="" />
+                        <img src="./asset/icon/decor-02.svg" alt="" />
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <section class="section footer d-flex stack-20">
+                <div class="container header-inner footer-top">
+                    <a href="mailto:hi@arif.interactive" class="header-mail">
+                        <span>
+                            <img
+                                src="./asset/img/header-email.png"
+                                alt="Email icon"
+                            />
+                        </span>
+                        <span>hi@arif.interactive</span>
+                    </a>
+
+                    <a href="/" class="header-logo">
+                        <img src="./asset/img/logo.png" alt="Logo" />
+                    </a>
+
+                    <!-- Navbar -->
+                    <nav class="navbar">
+                        <ul class="menu">
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Journey</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>©interactiveArif 2021. All rights reserved.</p>
+
+                    <div class="footer-menu">
+                        <a href="#">Privacy Policy</a>
+                        <span>|</span>
+                        <a href="#">Terms of Conditions</a>
                     </div>
                 </div>
             </section>

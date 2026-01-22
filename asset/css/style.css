@@ -6,6 +6,7 @@
     --primary-clr: #5d3bee;
     --heading-clr: #080415;
     --text-clr: #51586a;
+    --footer-clr: #525771;
     --light-clr: #fff;
     --dark-clr: #000;
     --button-clr: #fdfdfd;
@@ -869,6 +870,148 @@ h5,
     padding-bottom: 20px;
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Gallery */
+.gallery-heading {
+    text-align: center;
+    margin-inline: auto;
+}
+
+.gallery-heading p {
+    max-width: 528px;
+}
+
+.gallery-heading a {
+    text-decoration: underline;
+}
+
+.gallery-image {
+    max-width: 370px;
+    min-height: 529px;
+}
+
+.gallery-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+}
+
+.gallery-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.gallery-item:hover .gallery-image img {
+    transform: scale(1.05);
+}
+
+/* CTA */
+.cta {
+    padding-block: 70px 20px;
+}
+
+.cta .container {
+    position: relative;
+    width: 1330px;
+    padding: 68px 0 48px;
+    text-align: center;
+    background: var(--background-clr);
+    overflow: hidden;
+}
+
+.cta-heading {
+    position: relative;
+    z-index: 1;
+}
+
+.cta-heading p {
+    max-width: 570px;
+    margin-inline: auto;
+}
+
+.btn-cta {
+    margin-top: 10px;
+    align-self: center;
+}
+
+.cta-image {
+    position: relative;
+    z-index: 1;
+}
+
+.cta-decor img {
+    position: absolute;
+    /* opacity: 0.5; */
+}
+
+.cta-decor img:first-child {
+    height: 510px;
+    top: 0px;
+    left: 17%;
+}
+
+.cta-decor img:nth-child(2) {
+    left: -150px;
+    bottom: 0;
+    transform: rotate(10deg);
+}
+
+.cta-decor img:last-child {
+    top: 0px;
+    right: 0px;
+}
+
+/* Footer */
+.footer {
+    padding-block: 30px;
+    padding-inline: 85px;
+}
+
+.footer .container {
+    position: relative;
+    width: 1430px;
+    padding: 0 50px 30px;
+}
+
+.footer .container::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    border: 1px solid #0c072033;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px;
+    color: var(--footer-clr);
+}
+
+.footer-menu a {
+    color: var(--footer-clr);
+}
+
+.footer-menu a:hover {
+    text-decoration: underline;
+}
+
+.footer-menu span {
+    color: var(--footer-clr);
+}
+
+.footer-menu a:first-child {
+    margin-right: 23px;
+}
+
+.footer-menu a:last-child {
+    margin-left: 13px;
 }
 
 /* Animation */
